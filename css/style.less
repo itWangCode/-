@@ -1,0 +1,457 @@
+/**
+  * Created by wangyang on 2019-04-12.
+  * itwangyang@gmail.com
+  * http://www.itwangyang.xyz
+*/
+a:hover{
+  text-decoration: none;
+}
+.flexBox{
+  display: flex;
+  align-items: center;
+}
+.fontColor{
+  color: #333333;
+}
+.fontColora9{
+  color: #a9a9a9;
+}
+.fontSize{
+  font-size: 24px;
+}
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+@mainColor:#fe5112;
+.mainColor{
+  color: #fe5112;
+}
+.secColor{
+  color: #fe8112;
+}
+
+a:hover{
+  color: #fe5112;
+}
+
+/*********************************** header style ***************************************/
+body{
+  color: #333;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.my-text-left-alie-center{
+  top: 30%;
+  h1{
+    font-size: 3.5rem;
+  }
+  .my-btn-color{
+    width: 200px;
+    height: 60px;
+    background-color: #fe5112;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  .my-btn-color:hover{
+    background-color: #fe8112;
+  }
+}
+
+/********************************** my-title style ****************************************/
+.my-disabled{
+  border: 1px dashed #fe5112;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.my-title{
+  p{
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    padding: 50px 0;
+  }
+  .row.my-right{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.my-content-text{
+
+    p{
+      font-size: 18px;
+      line-height: 35px;
+      //text-align: right;
+    }
+  .p-style{
+    text-align: right;
+
+  }
+
+}
+.img_div{
+  position: relative;
+  border: 1px solid #aaa;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 240px;
+  height: 100%;
+  background: rgba(101, 101, 101, 0.6);
+  color: #ffffff;
+  opacity: 0;
+}
+
+.img_div a.mask-a:hover .mask {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+/*********************************** box-bottom style ********************************************/
+.box-bottom{
+  .bg-footer-one{
+    position: relative;
+    .footer-img{}
+    .footer-content{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%); /*Safari,Chrome*/
+      -moz-transform: translate(-50%,-50%);  /*IE9+*/
+      transform: translate(-50%,-50%); /*使元素本身向左移动宽度的一半*/
+
+      h3{
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+      }
+      ul>li{
+        line-height: 30px;
+        width: 100%;
+        max-width: 600px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        border-bottom: 1px dashed #ffffff;
+        a{
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+      a:hover{
+        color: @mainColor;
+      }
+
+    }
+  }
+  .bg-footer-two{
+    position: relative;
+    text-align: center;
+
+    .footer-content-address{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%); /*Safari,Chrome*/
+      -moz-transform: translate(-50%,-50%);  /*IE9+*/
+      transform: translate(-50%,-50%); /*使元素本身向左移动宽度的一半*/
+      h3{
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+
+      }
+      h1{
+        font-size: 56px;
+        color: #fff;
+        width: 100%;
+        a{
+          color: #fff;
+        }
+      }
+      p{
+        color: #fff;
+      }
+      address{
+        color: #fff;
+      }
+    }
+  }
+}
+
+.list-news{
+  p{
+    line-height: 1.5;
+  }
+}
+
+.footerCopy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-size: 12px;
+  background-color: #160803;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+}
+
+
+
+//定义图片遮罩层的标题的样式
+.fancybox-caption__body {
+  //padding-bottom: 7rem;
+  font-size: 2rem;
+}
+
+
+//动画效果
+.my-animation-left{
+  animation:mymove 1s 1;
+}
+
+@keyframes mymove
+{
+    0%   {left:0}
+    100% {left:222px}
+}
+
+
+
+.my-animation-left-text{
+  position: relative;
+  animation:mymove1 1s forwards 1s 1;
+}
+
+@keyframes mymove1
+{
+  0%   {left:-200px}
+  100% {left:0}
+}
+
+.my-animation-left-img{
+  position: relative;
+  animation:mymove2 1s forwards 1s 1;
+}
+@keyframes mymove2
+{
+  0%   {top:200px}
+  100% {top:0}
+}
+
+
+.my-animation-left-text2{
+  position: relative;
+  animation:mymove3 2s forwards 2s 1;
+}
+@keyframes mymove3
+{
+  0%   {top:200px}
+  100% {top:0}
+}
+
+
+.list-item1{
+  position: relative;
+  animation:mymove4 2s 1;
+}
+@keyframes mymove4
+{
+  0%   {top:200px}
+  100% {top:0}
+}
+
+
+.list-item2{
+  position: relative;
+  animation:mymove5 2s forwards 2s 1;
+}
+
+@keyframes mymove5
+{
+  0%   {top:200px}
+  100% {top:0}
+}
+
+
+
+.list-item3{
+  position: relative;
+  animation:mymove6 2s forwards 2s 1;
+}
+@keyframes mymove6
+{
+  0%   {left:200px}
+  100% {left:0}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .footer-content-address{
+    h3{
+      font-size: 1.2rem !important;
+
+    }
+    h1{
+      font-size: 1.5rem !important;
+    }
+    p{
+      font-size: 1rem;
+    }
+    address{
+      font-size: 1.2rem;
+    }
+  }
+  .mask-a{
+    display: none;
+  }
+  .footer-content{
+    h3{
+      font-size: 1.2rem !important;
+    }
+    ul{
+      li{
+        margin-bottom: 1rem;
+        a{
+          font-size: 1rem !important;
+        }
+      }
+    }
+  }
+  .col-my{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+  .footer-content-address{
+    h1{
+      font-size: 1rem !important;
+    }
+    p{
+      font-size: .6rem;
+    }
+  }
+  .mask-a{
+    display: none;
+  }
+  .footer-content{
+    //h3{
+    //  font-size: 20px !important;
+    //}
+    ul{
+      li{
+        margin-bottom: .3rem;
+        //a{
+        //  font-size: 14px !important;
+        //}
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width:1250px) and (max-width:1980px) {
+  .footer-content{
+    ul{
+      li{
+        margin-bottom: .6rem;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width:300px) and (max-width:374px) {
+  p{
+    margin: 0;
+    padding: 0;
+  }
+  .footer-content{
+    h3{
+      font-size: 1rem;
+    }
+    ul{
+      li{
+        a{
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+  .mb-3, .my-3 {
+     margin-bottom: 0 !important;
+  }
+
+  .mt-2, .my-2 {
+     margin-top: .5rem !important;
+  }
+  .footerCopy{
+    font-size: 12px !important;
+    flex-direction: row !important;
+    padding: .1rem;
+  }
+}
+
+
+
+/*点击的预览大图的*/
+button.fancybox-button.fancybox-button--thumbs {
+  display: none;
+}
+button.fancybox-button.fancybox-button--play {
+  display: none;
+}
+.fancybox-infobar {
+  display: none;
+}
